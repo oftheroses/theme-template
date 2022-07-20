@@ -1,0 +1,313 @@
+/*
+Theme Name: Li's Theme
+Text Domain: Bestie
+Version: 1
+Description: hello!
+Tags: never, gonna, give, you, up
+Author: Jibanyan
+Author URI: https://crouton.net/
+*/
+
+/* #region animation */
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* #endregion animation */
+/* #region scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+/* #endregion scrollbar */
+/* #region base */
+
+#error-404 {
+    background-color: white;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 10px;
+    width: max-content;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(270deg, #74ebd5, #acb6e5);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+
+    margin: 0;
+}
+
+/* #endregion base */
+
+/* #region sidebar */
+#sidebar-bar {
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    position: fixed;
+    width: 15%;
+}
+
+#sidebar-items {
+    align-items: center;
+    color: #acb6e5;
+    display: flex;
+    font-size: 25px;
+    height: 100%;
+    margin-left: 25px;
+    position: fixed;
+    text-align: left;
+    width: 15%;
+    z-index: 1;
+}
+
+.sidebar-icon {
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    padding-top: 5px;
+    width: 35px;
+}
+
+.sidebar-text {
+    height: 35px;
+    margin-left: 10px;
+}
+
+#sidebar-home {
+    cursor: pointer;
+    display: flex;
+}
+
+#sidebar-about {
+    cursor: pointer;
+    display: flex;
+}
+
+#sidebar-light {
+    cursor: pointer;
+    display: flex;
+}
+
+#include-audio {
+    cursor: pointer;
+}
+
+#toggle-audio {
+    display: flex;
+}
+
+#toggle-graphic {
+    display: flex;
+}
+
+#toggle-text {
+    display: flex;
+}
+
+#toggle-video {
+    display: flex;
+}
+
+#sidebar-searchbar {
+    border: solid 1px black;
+    font-family: garamond;
+    font-size: 20px;
+    height: 30px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+/* #endregion sidebar */
+/* #region homepage post container */
+#post-feed {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid black;
+    height: max-content;
+    padding: 25px;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 800px;
+}
+
+.post-content-warning-container {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    position: absolute;
+    width: 500px;
+}
+
+.post-content-warning-text {
+    text-align: center;
+}
+
+.post-title {
+    background-color: #acb6e5;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.post-title:hover {
+    color: black;
+    font-style: italic;
+}
+
+.post-author {
+    color: grey;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.post-body {
+    background-color: #acb6e5;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.post-info:hover {
+    color: black;
+    transition: color 2s;
+}
+
+.post-categories {
+    padding: 5px;
+    font-size: 17px;
+}
+
+.post-tags {
+    background-color: #acb6e5;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.post-divider {
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    margin: auto;
+    width: 100%;
+}
+/* #endregion homepage post container */
+/* #region single post */
+.single-post-container {
+    margin: auto;
+    padding-top: 200px;
+    width: 750px;
+}
+
+.single-post {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.single-post-title {
+    font-size: 25;
+}
+
+.single-post-author {
+    font-size: 25;
+}
+
+.single-post-body {
+    font-size: 25;
+}
+
+.single-post-categories {
+    font-size: 25;
+}
+
+.single-post-tags {
+    font-size: 25;
+}
+/* #endregion single post */
